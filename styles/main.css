@@ -18,3 +18,52 @@ html {
    flex-direction: column;
    justify-content: center;
 }
+
+.info {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+
+#welcome {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 60px;
+}
+
+#event-name {
+   display: flex;
+   flex-direction: column;
+
+   font-family: "Mulish";
+   font-style: normal;
+   font-weight: 200;
+   font-size: 48px;
+   line-height: 60px;
+   /* or 125% */
+
+   letter-spacing: -2px;
+}
+
+#event-name strong {
+   font-weight: 700;
+   font-size: 72px;
+   letter-spacing: 4px;
+   color: #f00;
+}
+
+#desc {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 100%;
+   max-width: 512px;
+}
+
+#desc strong {
+   font-weight: 500;
+   color: #f00;
+}
