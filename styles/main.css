@@ -103,3 +103,122 @@ html {
 
    color: #808080;
 }
+
+/* Form Related */
+
+#signup {
+   margin-top: 16px;
+   background: #1c1717;
+   border-radius: 16px;
+   width: 512px;
+
+   padding: 24px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+#signup .input-wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+#signup .input-wrapper label {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 100%;
+   /* identical to box height, or 16px */
+
+   letter-spacing: 0.5px;
+
+   color: #ffffff;
+}
+
+#signup .input-wrapper input,
+#signup .input-wrapper select {
+   appearance: none;
+   background: #221c1c;
+   border-radius: 8px;
+   border: none;
+   padding-inline: 16px;
+   height: 40px;
+   outline: none;
+
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 100%;
+   /* identical to box height, or 14px */
+
+   letter-spacing: 0.25px;
+
+   color: #fff;
+}
+
+#signup .input-wrapper input:focus {
+   outline: 2px solid #332d2d;
+}
+
+#signup .input-wrapper input::placeholder {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 100%;
+   /* identical to box height, or 14px */
+
+   letter-spacing: 0.25px;
+
+   color: #666666;
+}
+
+#signup #form-title {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 100%;
+   /* identical to box height, or 20px */
+
+   letter-spacing: 0.15px;
+
+   color: #ffffff;
+}
+
+button[type="submit"] {
+   border: none;
+   outline: none;
+   cursor: pointer;
+
+   align-self: center;
+
+   background: #ff0000;
+   border-radius: 8px;
+
+   width: 160px;
+   height: 48px;
+
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 100%;
+   /* identical to box height, or 14px */
+
+   letter-spacing: 1.25px;
+   text-transform: uppercase;
+
+   color: #ffffff;
+}
+
+button[type="submit"]:hover {
+   background: #f44;
+}
+
+button[type="submit"]:active {
+   background: #f66;
+}
