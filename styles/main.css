@@ -11,6 +11,11 @@ html {
    overflow: hidden;
 }
 
+#logo {
+   width: 700px;
+   height: 600px;
+}
+
 .wrapper {
    max-width: 1040px;
    min-height: 100dvh;
@@ -233,7 +238,60 @@ button[type="submit"]:active {
    background: #f66;
 }
 
-#logo {
-   width: 700px;
-   height: 600px;
+#success-msg-wrapper {
+   visibility: hidden;
+   display: none;
+
+   position: absolute;
+   inset: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background: rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(4px);
+}
+
+#success-msg {
+   background: #1c1717;
+   border-radius: 16px;
+   padding: 32px;
+   width: 400px;
+
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+
+   text-align: center;
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 100%;
+   /* identical to box height, or 16px */
+
+   letter-spacing: 0.15px;
+
+   color: #ffffff;
+}
+
+#success-msg h1 {
+   font-size: 40px;
+   letter-spacing: 0.15px;
+   line-height: 100%;
+}
+
+#success-msg section {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}
+
+#success-msg a {
+   text-decoration: none;
+   color: #f00;
+}
+
+#success-msg a:hover {
+   text-decoration: underline;
 }

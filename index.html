@@ -15,10 +15,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/index.js" defer></script>
     <title>Gaming Champions - O maior da América Latina!</title>
 </head>
 
 <body>
+    <div id="success-msg-wrapper">
+        <div id="success-msg">
+            <h1>GG!</h1>
+            <section>
+                <p>Seu cadastro foi concluído!</p>
+                <p>Em breve você receberá um e-mail com mais informações.</p>
+            </section>
+            <a href="index.html">Voltar para a página inicial</a>
+        </div>
+    </div>
+
     <div class="wrapper">
         <div class="container">
             <section class="info">
@@ -48,7 +61,7 @@
                 * Após concluir o cadastro, você será colocado na fase de seleção.
             </span>
 
-            <form id="signup">
+            <form id="signup" method="post">
                 <h3 id="form-title">Complete seu cadastro abaixo e prepare-se!</h3>
 
                 <div class="input-wrapper">
@@ -73,12 +86,12 @@
 
                 <div class="input-wrapper">
                     <label for="login">Login *</label>
-                    <input type="text" id="login" name="login" placeholder="exemplo123">
+                    <input type="text" id="login" name="login" placeholder="exemplo123" minlength="8">
                 </div>
 
                 <div class="input-wrapper">
                     <label for="password">Senha *</label>
-                    <input type="password" id="password" name="password" placeholder="digite sua senha">
+                    <input type="password" id="password" name="password" placeholder="digite sua senha" minlength="8">
                 </div>
 
                 <button type="submit">Concluir</button>
