@@ -8,7 +8,11 @@ html {
       linear-gradient(118.27deg, #131313 56.12%, #940404 289.7%);
 
    color: #fff;
-   overflow: hidden;
+   overflow-x: hidden;
+}
+
+* {
+   box-sizing: border-box;
 }
 
 #logo {
@@ -17,11 +21,12 @@ html {
 }
 
 .wrapper {
-   max-width: 1040px;
+   max-width: 1200px;
    min-height: 100dvh;
    margin: 0 auto;
    display: flex;
    align-items: center;
+   gap: 16px;
 }
 
 .container {
@@ -150,6 +155,7 @@ html {
 
 #signup .input-wrapper input,
 #signup .input-wrapper select {
+   max-width: 100%;
    appearance: none;
    background: #221c1c;
    border-radius: 8px;
@@ -294,4 +300,83 @@ button[type="submit"]:active {
 
 #success-msg a:hover {
    text-decoration: underline;
+}
+
+/* Responsivity */
+
+@media (max-width: 768px) {
+   #logo {
+      display: none;
+   }
+
+   #disclaimer {
+      font-size: 12px;
+   }
+
+   #signup {
+      width: 100%;
+      padding: 16px;
+      gap: 20px;
+   }
+
+   #signup #form-title {
+      font-size: 16px;
+   }
+
+   #signup .input-wrapper label {
+      font-size: 14px;
+   }
+
+   #signup .input-wrapper input,
+   #signup .input-wrapper select {
+      height: 36px;
+      font-size: 12px;
+   }
+
+   button[type="submit"] {
+      width: 100%;
+      height: 36px;
+      font-size: 12px;
+   }
+}
+
+@media (max-width: 1024px) {
+   #logo {
+      width: 100%;
+   }
+
+   .wrapper {
+      width: 100%;
+      padding: 16px;
+   }
+
+   .container {
+      width: 100%;
+   }
+
+   #welcome {
+      font-size: 24px;
+   }
+
+   #event-name {
+      font-size: 28px;
+      line-height: 110%;
+   }
+
+   #event-name strong {
+      font-size: 40px;
+   }
+
+   #desc {
+      font-size: 14px;
+      max-width: 100%;
+   }
+
+   .local-date-item span {
+      font-size: 14px;
+   }
+
+   #disclaimer {
+      font-size: 12px;
+   }
 }
