@@ -67,3 +67,39 @@ html {
    font-weight: 500;
    color: #f00;
 }
+
+.local-date {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   margin-top: 16px;
+   margin-bottom: 8px;
+}
+
+.local-date span {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 100%;
+   /* identical to box height, or 16px */
+
+   letter-spacing: 0.15px;
+}
+
+.local-date .local-date-item {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+
+#disclaimer {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 100%;
+   /* identical to box height, or 14px */
+
+   color: #808080;
+}
